@@ -11,3 +11,26 @@ The instructions for each workshop have been split into separate files:
 - [34A Instructions](docs/34A.md)
 - [34B Instructions](docs/34B.md)
 - [34C Instructions](docs/34C.md)
+
+
+# Deployment and Setting up the Application
+
+- cerate the postgres service
+- create a webs service
+  - set DATABASE_URL
+  - build command
+
+```
+npm i && npm run prisma:reset && cd client && npm i && npm run build
+```
+
+- return to the root folder
+
+```
+cd ..
+```
+
+- start script
+
+```
+npm run server
